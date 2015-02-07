@@ -1,0 +1,12 @@
+{
+    "require": {
+        "psr/http-message": "~0.8.0@dev",
+        "phly/conduit": "~1.0-dev@dev",
+        "zendframework/zend-servicemanager": "~2.3"
+    },
+    "autoload" : {
+        "psr-4": {
+            "SfpConduitMiddleware\\" : "src/SfpConduitMiddleware"
+        }
+    }
+}
