@@ -11,7 +11,7 @@ return call_user_func(function() {
     // basics eg.redirect
 
     // site 1
-    $app->pipe($services->get('Site'));
+    $app->pipe($services->get('Application\Module'));
 
     // errors
     $app->pipe(new NotFound());

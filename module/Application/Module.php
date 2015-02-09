@@ -1,7 +1,7 @@
 <?php
-namespace SfpConduitMiddleware;
+namespace Application;
 
-class Site
+class Module
 {
     private $serviceManager;
 

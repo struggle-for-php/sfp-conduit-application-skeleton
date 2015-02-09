@@ -1,8 +1,8 @@
 <?php
 return (new Zend\ServiceManager\ServiceManager)
 ->setService('Config', include 'parameters.php')
-->setFactory('Site', function($sm){
-    return new SfpConduitMiddleware\Site($sm);
+->setFactory('Application\Module', function($sm){
+    return new Application\Module($sm);
 })
 ->setFactory('ErrorHandler', function($sm){
     $displayErrors = ($sm->get('Config')['env'] !== 'production');

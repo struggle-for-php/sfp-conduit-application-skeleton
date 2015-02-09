@@ -10,6 +10,8 @@ if (php_sapi_name() === 'cli-server'
 }
 
 chdir(__DIR__ . '/../');
-require_once 'vendor/autoload.php';
+$loader = require_once 'vendor/autoload.php';
+$loader->add('Application\\', 'module');
+unset($loader);
 
 Server::createServer(include 'app.php', $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES)->listen();
