@@ -1,6 +1,6 @@
 <?php
 use Phly\Conduit\MiddlewarePipe;
-use SfpConduitMiddleware\NotFound;
+use Application\NotFound;
 
 return call_user_func(function() {
 
@@ -11,7 +11,7 @@ return call_user_func(function() {
     // basics eg.redirect
 
     // site 1
-    $app->pipe($services->get('Application\Module'));
+    $app->pipe($services->get('Sample\Module'));
 
     // errors
     $app->pipe(new NotFound());

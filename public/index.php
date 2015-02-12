@@ -12,6 +12,6 @@ if (php_sapi_name() === 'cli-server'
 chdir(__DIR__ . '/../');
 $loader = require_once 'vendor/autoload.php';
 $loader->add('Application\\', 'src');
-unset($loader);
+$loader->add('Sample\\', 'src');
 
 Server::createServer(include 'app.php', $_SERVER, $_GET, $_POST, $_COOKIE, $_FILES)->listen();

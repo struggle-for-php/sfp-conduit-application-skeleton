@@ -1,12 +1,12 @@
 <?php
 return (new Zend\ServiceManager\ServiceManager)
 ->setService('Config', include 'parameters.php')
-->setFactory('Application\Module', function($sm){
-    return new Application\Module($sm);
+->setFactory('Sample\Module', function($sm){
+    return new Sample\Module($sm);
 })
 ->setFactory('ErrorHandler', function($sm){
     $displayErrors = ($sm->get('Config')['env'] !== 'production');
-    return new SfpConduitMiddleware\ErrorHandler('views', $displayErrors);
+    return new Application\ErrorHandler('views', $displayErrors);
 })
 /** ->setFactory('view', function($sm) {
     $view = new Phly\Mustache\Mustache;

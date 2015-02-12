@@ -1,5 +1,5 @@
 <?php
-namespace SfpConduitMiddleware;
+namespace Application;
 
 // borrowed from https://github.com/weierophinney/mwop.net/blob/master/src/NotFound.php
 

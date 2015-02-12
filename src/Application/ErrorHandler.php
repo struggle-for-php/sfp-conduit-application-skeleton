@@ -1,5 +1,5 @@
 <?php
-namespace SfpConduitMiddleware;
+namespace Application;
 
 // idea from https://github.com/weierophinney/mwop.net/blob/master/src/ErrorHandler.php
 
