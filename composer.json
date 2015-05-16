@@ -3,8 +3,8 @@
     "description": "application skeleton for conduit",
     "license": "BSD-3-Clause",
     "require": {
-        "psr/http-message": "~0.11",
-        "phly/conduit": "~1.0-dev@dev",
+        "psr/http-message": "^0.10.0",
+        "phly/conduit": "^0.15.0",
         "zendframework/zend-servicemanager": "~2.4"
     }
 }
