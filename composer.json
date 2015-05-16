@@ -1,7 +1,10 @@
 {
+    "name": "struggle-for-php/sfp-conduit-application-skeleton",
+    "description": "application skeleton for conduit",
+    "license": "BSD-3-Clause",
     "require": {
-        "psr/http-message": "~0.8.0@dev",
+        "psr/http-message": "~0.11",
         "phly/conduit": "~1.0-dev@dev",
-        "zendframework/zend-servicemanager": "~2.3"
+        "zendframework/zend-servicemanager": "~2.4"
     }
 }
